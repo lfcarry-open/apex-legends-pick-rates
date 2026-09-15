@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apex Legends pick rates by rank — daily open dataset (LFcarry)</title>
+<meta name="description" content="Daily pick share for all 28 Apex Legends legends per rank board since June 2026, as CSV/JSON. Open data by LFcarry pro analytics, source Apex Legends Status.">
+<style>
+  body{font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:900px;margin:40px auto;padding:0 16px;color:#111}
+  h1{font-size:26px;margin:0 0 6px} .sub{color:#555;margin:0 0 24px}
+  table{border-collapse:collapse;width:100%;font-size:14px} th,td{border-bottom:1px solid #e5e5e5;padding:6px 8px;text-align:left}
+  th{background:#fafafa} .bar{height:10px;background:#f5b301;display:inline-block;vertical-align:middle;margin-right:6px}
+  a{color:#0b57d0} footer{margin-top:32px;color:#666;font-size:13px}
+</style>
+</head>
+<body>
+<h1>Apex Legends pick rates by rank</h1>
+<p class="sub">Daily open dataset · 28 legends · Bronze → Predator boards · sampled 00:00 UTC · <a href="https://github.com/lfcarry-open/apex-legends-pick-rates">GitHub repository</a></p>
+<p>Latest all-ranks board (<span id="date">…</span>). Full series, per-rank boards and the 7-day movement contract are in the repo;
+the interactive per-rank tier board built on this data is on
+<a href="https://lfcarry.com/guides/apex-legends-tier-list">lfcarry.com — Apex Legends tier list</a>.</p>
+<table id="t"><thead><tr><th>#</th><th>Legend</th><th>Pick share</th></tr></thead><tbody></tbody></table>
+<footer>Data: <a href="https://apexlegendsstatus.com">Apex Legends Status</a>, fetched daily by <a href="https://lfcarry.com">LFcarry</a> pro analytics. Derived series CC BY 4.0. Unofficial; Apex Legends is a trademark of EA/Respawn.</footer>
+<script>
+fetch('summary.json').then(r=>r.json()).then(s=>{
+  document.getElementById('date').textContent=s.latest_date;
+  const tb=document.querySelector('#t tbody');
+  s.top8_all_ranks.forEach(([lg,v],i)=>{const tr=document.createElement('tr');tr.innerHTML=`<td>${i+1}</td><td>${lg.replace(/-/g,' ').replace(/\b\w/g,c=>c.toUpperCase())}</td><td><span class="bar" style="width:${Math.round(v*12)}px"></span>${v.toFixed(2)}%</td>`;tb.appendChild(tr);});
+}).catch(()=>{});
+</script>
+</body>
+</html>
