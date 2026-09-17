@@ -1,5 +1,5 @@
 {
- "rows_csv": 5858,
+ "rows_csv": 5886,
  "boards": {
   "any": {
    "label": "All ranks, any mode (ALS /lib/legendtrend.json)",
@@ -39,9 +39,9 @@
   },
   "Masterpred": {
    "label": "Master + Apex Predator",
-   "days": 17,
+   "days": 18,
    "from": "2026-08-29",
-   "to": "2026-09-14"
+   "to": "2026-09-16"
   },
   "PredMeta": {
    "label": "Top players ranked board (ALS /meta): pick share of games, positive-RP rate, games \u2014 season to date",
@@ -50,7 +50,7 @@
    "to": "2026-09-14"
   }
  },
- "latest_date": "2026-09-14",
+ "latest_date": "2026-09-16",
  "top8_all_ranks": [
   [
    "pathfinder",

@@ -13,12 +13,12 @@ which turns it into tiers per rank band and explains the movement; this reposito
 
 | file | what |
 |---|---|
-| `data/apex_pick_rates_long.csv` | long format: `date, board, legend, pick_pct` — 5,858 rows as of 2026-09-14 |
+| `data/apex_pick_rates_long.csv` | long format: `date, board, legend, pick_pct` — 5,886 rows as of 2026-09-16 |
 | `data/apex_tier_series.json` | the same series in the original wide format (`legends` column order → `boards.<board>.rows[date]`), plus `patches` (season/hotfix dates) and `fetchLog` (which boards were fetched each day) |
 | `data/apex_tier_delta.json` | the 7-day movement contract: per legend and band, pick share, delta with a dead band + 2-day confirmation, editorial tier letter (source of truth for the published board) and an automatic pick-share quantile letter |
 | `docs/summary.json` | boards, coverage dates, latest top-8 on the all-ranks board |
 
-## Coverage (as of 2026-09-14)
+## Coverage (as of 2026-09-16)
 
 | board | days | from | to |
 |---|---|---|---|
