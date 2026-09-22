@@ -18,7 +18,7 @@ which turns it into tiers per rank band and explains the movement; this reposito
 | `data/apex_tier_delta.json` | the 7-day movement contract: per legend and band, pick share, delta with a dead band + 2-day confirmation, editorial tier letter (source of truth for the published board) and an automatic pick-share quantile letter |
 | `docs/summary.json` | boards, coverage dates, latest top-8 on the all-ranks board |
 
-## Coverage (as of 2026-09-20)
+## Coverage (as of 2026-09-22)
 
 | board | days | from | to |
 |---|---|---|---|
