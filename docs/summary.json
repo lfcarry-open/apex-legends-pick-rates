@@ -1,47 +1,47 @@
 {
- "rows_csv": 15992,
+ "rows_csv": 16188,
  "boards": {
   "any": {
    "label": "All ranks, any mode (ALS /lib/legendtrend.json)",
-   "days": 157,
+   "days": 158,
    "from": "2026-06-01",
-   "to": "2026-11-04"
+   "to": "2026-11-05"
   },
   "Bronze": {
    "label": "Bronze (ALS pick-rates board)",
-   "days": 68,
+   "days": 69,
    "from": "2026-08-29",
-   "to": "2026-11-04"
+   "to": "2026-11-05"
   },
   "Silver": {
    "label": "Silver",
-   "days": 68,
+   "days": 69,
    "from": "2026-08-29",
-   "to": "2026-11-04"
+   "to": "2026-11-05"
   },
   "Gold": {
    "label": "Gold",
-   "days": 68,
+   "days": 69,
    "from": "2026-08-29",
-   "to": "2026-11-04"
+   "to": "2026-11-05"
   },
   "Platinum": {
    "label": "Platinum",
-   "days": 68,
+   "days": 69,
    "from": "2026-08-29",
-   "to": "2026-11-04"
+   "to": "2026-11-05"
   },
   "Diamond": {
    "label": "Diamond",
-   "days": 68,
+   "days": 69,
    "from": "2026-08-29",
-   "to": "2026-11-04"
+   "to": "2026-11-05"
   },
   "Masterpred": {
    "label": "Master + Apex Predator",
-   "days": 68,
+   "days": 69,
    "from": "2026-08-29",
-   "to": "2026-11-04"
+   "to": "2026-11-05"
   },
   "PredMeta": {
    "label": "Top players ranked board (ALS /meta): pick share of games, positive-RP rate, games \u2014 season to date",
@@ -50,39 +50,39 @@
    "to": "2026-11-03"
   }
  },
- "latest_date": "2026-11-04",
+ "latest_date": "2026-11-05",
  "top8_all_ranks": [
   [
-   "revenant",
-   12.093
+   "pathfinder",
+   11.044
   ],
   [
-   "pathfinder",
-   11.33
+   "revenant",
+   10.765
   ],
   [
    "lifeline",
-   9.433
+   9.676
   ],
   [
    "octane",
-   6.944
+   6.589
   ],
   [
    "wraith",
-   5.998
-  ],
-  [
-   "loba",
-   5.827
+   5.765
   ],
   [
    "mad-maggie",
-   4.899
+   5.25
   ],
   [
-   "bangalore",
-   4.272
+   "loba",
+   4.979
+  ],
+  [
+   "crypto",
+   4.505
   ]
  ]
 }
